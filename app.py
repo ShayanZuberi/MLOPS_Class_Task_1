@@ -18,6 +18,11 @@ def hello_world():
     return 'Hello, World!'
 
 
+@app.route('/member3')
+def hello_world():
+    return 'Hello from member3!'
+
+
 @app.route('/predict')
 def preddict_stock():
     model = load_model('stock_predictor.h5' ,compile=False)
