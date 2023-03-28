@@ -1,0 +1,28 @@
+name: Build Branch on Commit
+
+on:
+  push:
+    branches:
+      - member1
+      - member2
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build
+        run: |
+          echo "Building the branch on commit..."
+          # Add build commands here
