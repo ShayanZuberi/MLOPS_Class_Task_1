@@ -17,6 +17,9 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
+@app.route('/member1')
+def hello_world():
+    return 'Hello From Member1 Branch'
 
 @app.route('/predict')
 def preddict_stock():
