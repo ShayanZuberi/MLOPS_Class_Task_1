@@ -2,15 +2,13 @@ name: Build Main Branch
 
 on:
   pull_request:
-    types: [closed]
     branches:
-      - member1
-      - member2
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
+    if: github.event.pull_request.merged == true && github.ref == 'refs/heads/main'
 
     steps:
       - name: Checkout
