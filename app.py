@@ -20,7 +20,7 @@ def hello_world():
 
 @app.route('/member3')
 def hello_world():
-    return 'Hello from member3!'
+    return 'Hello again from member3!'
 
 
 @app.route('/predict')
