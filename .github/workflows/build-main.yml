@@ -4,7 +4,10 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - main
+      - member1
+      - member2
+      - member3
+      - member4
 
 jobs:
   build:
