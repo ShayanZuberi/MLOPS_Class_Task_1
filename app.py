@@ -18,9 +18,11 @@ def hello_world():
     return 'Hello, World!'
 
 
-@app.route('/member4')
+
+@app.route('/member3')
 def hello_world():
-    return 'Hello thrice again, from member4!'
+    return 'Hello again from member3!'
+
 
 @app.route('/predict')
 def preddict_stock():
