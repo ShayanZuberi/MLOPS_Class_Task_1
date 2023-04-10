@@ -3,7 +3,7 @@ name: Build Main Branch
 on:
   pull_request:
     branches:
-      - main
+      - member3
 
 jobs:
   build:
