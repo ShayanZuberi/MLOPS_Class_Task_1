@@ -20,7 +20,7 @@ def hello_world():
 
 @app.route('/member4')
 def hello_world():
-    return 'Hello again, from member4!'
+    return 'Hello once again, from member4!'
 
 @app.route('/predict')
 def preddict_stock():
